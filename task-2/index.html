@@ -25,7 +25,7 @@
                 {{item.name}}, остаток: {{item.rest}}
             </li>
         </ul>
-        <p class="danger">Остаток на складе: {{count}}</p>
+        <p class="danger">Остаток на складе: {{items.length}}</p>
         <p>
             <button @click="deleteItem">Удалить товар с нулевым остатком на складе</button>
         </p>
@@ -69,12 +69,7 @@
     data () {
       return {
         items,
-        deleted: []
-      }
-    },
-    computed: {
-      count () {
-        return this.items.length
+        deleted: [],
       }
     },
     methods: {

@@ -22,4 +22,4 @@ ev.on('event.up', () => {
 });
 ```
 
-Ответ:
+Ответ: VECTOR_NAME = ['down', 'left', 'up', 'right']
